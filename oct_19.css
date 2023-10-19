@@ -1,0 +1,125 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: grid;
+    grid-template-rows: 15% 6.5% 1fr 5%;
+    grid-template-columns: 1fr 3fr .9fr;
+    grid-template-areas:
+      "top top top"
+      "link_bar link_bar link_bar"
+      "menu middle right"
+      "bottom bottom bottom";
+    height: 100vh;
+}
+.top{
+    grid-area: top;
+    background-color: #ffaaad;
+    color: black;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Bungee', sans-serif;
+    text-align: left;
+    padding-left: 3.5%;
+    padding-top: 2%;
+}
+.link_bar{
+    grid-area: link_bar;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #99f6ff;
+}
+.link{
+    position: relative;
+    color: black;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Bungee', sans-serif;
+    text-decoration: none;
+    margin-left: 6.5%;
+}
+.bottom{
+    grid-area: bottom;
+    background-color: #ffa782;
+} 
+.menu{
+    grid-area: menu;
+    padding-top: 15%;
+    display: grid;
+    grid-template-rows: repeat(4, .05fr);
+    align-items: center;
+    background-color: #fff3a5;
+}
+.menu_link{
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Bungee', sans-serif;
+    text-decoration: none;
+    margin-left: 7%;
+}
+.middle{
+    grid-area: middle;
+    background-color: #b7ff6e;
+    display: grid;
+    padding-left: 8%;
+}
+.middle_title{
+    position: relative;
+    padding-top: 3%;
+    color: black;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Bungee', sans-serif;
+}
+.middle_image{
+    position: relative;
+    margin-left: 1.5%;
+    margin-top: -3%;
+    width: 48%;
+    height: 45%;
+}
+.middle_text_reg{
+    position: relative;
+    margin-top: -31.5%;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Bungee', sans-serif;
+    margin-left: 54%;
+}
+.middle_text_stretch{
+    position: relative;
+    transform: scaleX(2.2);
+    color: black;
+    font-size: 44px;
+    font-weight: bold;
+    font-family: 'Bungee', sans-serif;
+    margin-left: 31%;
+    margin-right: 20%;
+    margin-top: -14%;
+}
+.right{
+    grid-area: right;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-rows: repeat(4, .1fr);
+    align-items: center;
+    margin-left: 9.5%;
+}
+.right_image{
+    position: relative;
+    width: 90%;
+    height: 38%;
+    margin-top: 17%;
+}
+.right_text{
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Bungee', sans-serif;
+    margin-left: 6%;
+    margin-top: 5%;
+}
